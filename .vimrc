@@ -1,8 +1,8 @@
 
-" An example for a vimrc file.
+" .vimrc for Jonas Stehli
 "
-" Maintainer:	Bram Moolenaar <Bram@vim.org>
-" Last change:	2019 Jan 26
+" Maintainer:	Jonas Stehli <jonas.stehli@jsounds.ch>
+" Last change:	2020 Apr 6
 "
 " To use it, copy it to
 "     for Unix and OS/2:  ~/.vimrc
@@ -10,43 +10,44 @@
 "  for MS-DOS and Win32:  $VIM\_vimrc
 "	    for OpenVMS:  sys$login:.vimrc
 
-" When started as "evim", evim.vim will already have done these settings, bail
-" out.
-if v:progname =~? "evim"
-  finish
-endif
+" * * * * * * * * * * * * * * * * * * * *
+" start 'vim-plug' plug-in manager
+" use :PlugInstall inside vim to activate
+call plug#begin('~/.vim/plugged')
 
-" Get the defaults that most users want.
-source $VIMRUNTIME/defaults.vim
+" colors
+Plug 'tomasr/molokai'    " molokai
+Plug 'sjl/badwolf'       " badwolf
 
-if has("vms")
-  set nobackup		" do not keep a backup file, use versions instead
-else
-  set backup		" keep a backup file (restore to previous version)
-  if has('persistent_undo')
-    set undofile	" keep an undo file (undo changes after closing)
-  endif
-endif
+" end of vim-plug block
+call plug#end()
+" * * * * * * * * * * * * * * * * * * * *
 
-if &t_Co > 2 || has("gui_running")
-  " Switch on highlighting the last used search pattern.
-  set hlsearch
-endif
+" make sure current features are enabled
+set nocompatible
 
-" Put these in an autocmd group, so that we can delete them easily.
-augroup vimrcEx
-  au!
+" color scheme
+colorscheme badwolf
 
-  " For all text files set 'textwidth' to 78 characters.
-  autocmd FileType text setlocal textwidth=78
-augroup END
+" syntax highlighting
+syntax enable
 
-" Add optional packages.
-"
-" The matchit plugin makes the % command work better, but it is not backwards
-" compatible.
-" The ! means the package won't be loaded right away but when plugins are
-" loaded during initialization.
-if has('syntax') && has('eval')
-  packadd! matchit
-endif
+" search down into subdirectories
+" provides tab-completion for all file related tasks
+" reference: youtube.com/watch?v=XA2WjJbmmoM&t=408s
+set path+=**
+
+" tab behaviour
+set tabstop=4  " # of spaces used for displaying tab
+set softtabstop=4  " # of spaces used when typing tab
+set expandtab  " use spaces instead of tab
+
+" ui config
+set number  " show line numbers
+set showcmd  " shows last entered command at the bottom right of vim
+set cursorline  " highlight current line
+" filetype indent on  " load filetype-specific indent files
+set wildmenu  " visual autocomplete for command menu
+set lazyredraw  " only redraw when we need to
+set showmatch  " highlight matching {[()]}
+
