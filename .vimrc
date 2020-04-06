@@ -52,7 +52,7 @@ set wildmenu  " visual autocomplete for command menu
 set lazyredraw  " only redraw when we need to
 set showmatch  " highlight matching {[()]}
 set list  " show list characters as defined by 'listchars' below
-set listchars:tab=>-,trail=·,extends:>,precedes:<
+set listchars=tab:>-,trail:·,extends:>,precedes:<
 
 " Get off my lawn - helpful when learning Vim :)
 nnoremap <Left> :echoe "Use h"<CR>
