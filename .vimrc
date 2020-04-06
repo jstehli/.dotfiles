@@ -1,4 +1,3 @@
-
 " .vimrc for Jonas Stehli
 "
 " Maintainer:	Jonas Stehli <jonas.stehli@jsounds.ch>
@@ -9,6 +8,7 @@
 "	      for Amiga:  s:.vimrc
 "  for MS-DOS and Win32:  $VIM\_vimrc
 "	    for OpenVMS:  sys$login:.vimrc
+
 
 " * * * * * * * * * * * * * * * * * * * *
 " start 'vim-plug' plug-in manager
@@ -22,6 +22,7 @@ Plug 'sjl/badwolf'       " badwolf
 " end of vim-plug block
 call plug#end()
 " * * * * * * * * * * * * * * * * * * * *
+
 
 " make sure current features are enabled
 set nocompatible
@@ -50,4 +51,10 @@ set cursorline  " highlight current line
 set wildmenu  " visual autocomplete for command menu
 set lazyredraw  " only redraw when we need to
 set showmatch  " highlight matching {[()]}
+
+" Get off my lawn - helpful when learning Vim :)
+nnoremap <Left> :echoe "Use h"<CR>
+nnoremap <Right> :echoe "Use l"<CR>
+nnoremap <Up> :echoe "Use k"<CR>
+nnoremap <Down> :echoe "Use j"<CR>
 
