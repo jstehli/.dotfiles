@@ -1,5 +1,12 @@
 #!/bin/bash
 # Installation script for personal dotfiles
+# by Jonas Stehli
+
+
+# *** bash ***
+
+ln -sv ~/.dotfiles/.bashrc ~
+ln -sv ~/.dotfiles/.bash_profile ~
 
 
 # *** vim ***
