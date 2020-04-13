@@ -9,6 +9,9 @@ rm ~/.bashrc
 ln -sv ~/.dotfiles/.bashrc ~
 rm ~/.bash_profile
 ln -sv ~/.dotfiles/.bash_profile ~
+rm ~/.bash_aliases
+ln -sv ~/.dotfiles/.bash_aliases ~
+
 
 
 # *** vim ***
