@@ -5,13 +5,16 @@
 
 # *** bash ***
 
+rm ~/.bashrc
 ln -sv ~/.dotfiles/.bashrc ~
+rm ~/.bash_profile
 ln -sv ~/.dotfiles/.bash_profile ~
 
 
 # *** vim ***
 
 # vimrc
+rm ~/.vimrc
 ln -sv ~/.dotfiles/.vimrc ~
 
 # plugin manager: vimplug
