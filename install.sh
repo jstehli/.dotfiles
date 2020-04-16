@@ -46,7 +46,7 @@ if [[ -f ~/.inputrc ]]
 then
     rm ~/.inputrc
 fi
-ln -sv ~/.inputrc ~
+ln -sv ~/.dotfiles/.inputrc ~
 
 # *** vim ***
 
