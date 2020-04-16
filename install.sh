@@ -40,6 +40,14 @@ then
 fi
 
 
+# *** readline init / inputrc ***
+
+if [[ -f ~/.inputrc ]]
+then
+    rm ~/.inputrc
+fi
+ln -sv ~/.inputrc ~
+
 # *** vim ***
 
 # cleanup
