@@ -22,6 +22,10 @@ set tabstop=4  " # of spaces used for displaying tab
 set softtabstop=4  " # of spaces used when typing tab
 set expandtab  " use spaces instead of tab
 
+" indent after keywords
+set smartindent
+set shiftwidth=4
+
 " ui config
 set number  " show line numbers
 set showcmd  " shows last entered command at the bottom right of vim
