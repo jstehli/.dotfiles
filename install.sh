@@ -6,18 +6,9 @@
 # *** bash ***
 
 # clean up
-if [[ -f ~/.bashrc ]]
-then
-    rm ~/.bashrc
-fi
-if [[ -f ~/.bash_profile ]]
-then
-    rm ~/.bash_profile
-fi
-if [[ -f ~/.bash_aliases ]]
-then
-    rm ~/.bash_aliases
-fi
+rm -f ~/.bashrc
+rm -f ~/.bash_profile
+rm -f ~/.bash_aliases
 
 # symlinks
 ln -sv ~/.dotfiles/bashrc ~/.bashrc
@@ -42,23 +33,15 @@ fi
 
 # *** readline init / inputrc ***
 
-if [[ -f ~/.inputrc ]]
-then
-    rm ~/.inputrc
-fi
+rm -f ~/.inputrc
 ln -sv ~/.dotfiles/inputrc ~/.inputrc
+
 
 # *** vim ***
 
 # cleanup
-if [[ -f ~/.vimrc ]]
-then
-    rm ~/.vimrc
-fi
-if [[ -d ~/.vim ]]
-then
-    rm -rf ~/.vim
-fi
+rm -f ~/.vimrc
+rm -rf ~/.vim
 
 # symlink
 ln -sv ~/.dotfiles/vim ~/.vim
