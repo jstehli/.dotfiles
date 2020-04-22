@@ -20,9 +20,9 @@ then
 fi
 
 # symlinks
-ln -sv ~/.dotfiles/.bashrc ~
-ln -sv ~/.dotfiles/.bash_profile ~
-ln -sv ~/.dotfiles/.bash_aliases ~
+ln -sv ~/.dotfiles/bashrc ~/.bashrc
+ln -sv ~/.dotfiles/bash_profile ~/.bash_profile
+ln -sv ~/.dotfiles/bash_aliases ~/.bash_aliases
 
 # re-initialize conda to account for different user home dirs
 # this affects bashrc
@@ -46,7 +46,7 @@ if [[ -f ~/.inputrc ]]
 then
     rm ~/.inputrc
 fi
-ln -sv ~/.dotfiles/.inputrc ~
+ln -sv ~/.dotfiles/inputrc ~/.inputrc
 
 # *** vim ***
 
@@ -61,5 +61,5 @@ then
 fi
 
 # symlink
-ln -sv ~/.dotfiles/.vim ~
+ln -sv ~/.dotfiles/vim ~/.vim
 
