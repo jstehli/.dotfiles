@@ -3,6 +3,10 @@
 # by Jonas Stehli
 
 
+# *** git submodules ***
+
+git submodule update --init
+
 # *** bash ***
 
 # clean up
