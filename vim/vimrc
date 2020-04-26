@@ -12,6 +12,9 @@ colorscheme badwolf
 " syntax highlighting
 syntax enable
 
+" filetype specific behaviour
+filetype plugin indent on
+
 " search down into subdirectories
 " provides tab-completion for all file related tasks
 " reference: youtube.com/watch?v=XA2WjJbmmoM&t=408s
@@ -37,6 +40,9 @@ set showmatch  " highlight matching {[()]}
 set list  " show list characters as defined by 'listchars' below
 set listchars=tab:>-,trail:·,extends:>,precedes:<
 set laststatus=2  " always show filename
+
+" latex behaviour (proposed in vimtex manual)
+let g:tex_flavor = 'latex'
 
 " Get off my lawn - helpful when learning Vim :)
 nnoremap <Left> :echoe "Use h"<CR>
