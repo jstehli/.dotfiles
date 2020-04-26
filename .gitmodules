@@ -7,3 +7,6 @@
 [submodule "vim/pack/my-plugins/start/repeat"]
 	path = vim/pack/my-plugins/start/repeat
 	url = https://tpope.io/vim/repeat.git
+[submodule "vim/pack/my-plugins/opt/vimtex"]
+	path = vim/pack/my-plugins/opt/vimtex
+	url = https://github.com/lervag/vimtex.git
