@@ -10,3 +10,6 @@
 [submodule "vim/pack/my-plugins/opt/vimtex"]
 	path = vim/pack/my-plugins/opt/vimtex
 	url = https://github.com/lervag/vimtex.git
+[submodule "vim/pack/my-plugins/start/surround"]
+	path = vim/pack/my-plugins/start/surround
+	url = https://github.com/tpope/vim-surround.git
