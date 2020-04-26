@@ -130,6 +130,13 @@ fi
 
 set -o vi
 
+# add TeXLive to path
+
+if [[ -d /usr/local/texlive/2020/bin/x86_64-linux ]]
+then
+    export PATH=/usr/local/texlive/2020/bin/x86_64-linux:$PATH
+fi
+
 # *** END OF CUSTOMIZATION ***
 
 
