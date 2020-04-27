@@ -1,3 +1,13 @@
 $include /etc/inputrc
+
+# set vi style editing mode
+
 set editing-mode vi
 set keymap vi
+
+# history search in command line
+
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+"\e[C": forward-char
+"\e[D": backward-char
