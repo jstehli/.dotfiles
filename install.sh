@@ -50,3 +50,11 @@ rm -rf ~/.vim
 # symlink
 ln -sv ~/.dotfiles/vim ~/.vim
 
+
+# *** i3 window manager ***
+
+# cleanup
+rm -rf ~/.config/i3
+
+# symlink
+ln -sv ~/.dotfiles/i3 ~/.config/i3
