@@ -58,3 +58,15 @@ rm -rf ~/.config/i3
 
 # symlink
 ln -sv ~/.dotfiles/i3 ~/.config/i3
+
+
+# *** autostart script ***
+
+# cleanup
+rm -rf ~/.autostart.sh
+
+# symlink
+ln -sv ~/.dotfiles/autostart.sh ~/.autostart.sh
+
+# executability
+chmod +x ~/.dotfiles/autostart.sh
