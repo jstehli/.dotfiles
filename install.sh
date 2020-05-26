@@ -55,18 +55,9 @@ ln -sv ~/.dotfiles/vim ~/.vim
 
 # cleanup
 rm -rf ~/.config/i3
+rm -rf ~/.config/i3blocks
 
 # symlink
 ln -sv ~/.dotfiles/i3 ~/.config/i3
+ln -sv ~/.dotfiles/i3blocks ~/.config/i3blocks
 
-
-# *** autostart script ***
-
-# cleanup
-rm -rf ~/.autostart.sh
-
-# symlink
-ln -sv ~/.dotfiles/autostart.sh ~/.autostart.sh
-
-# executability
-chmod +x ~/.dotfiles/autostart.sh
