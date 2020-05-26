@@ -137,6 +137,16 @@ then
     export PATH=/usr/local/texlive/2020/bin/x86_64-linux:$PATH
 fi
 
+# add todo.txt to path if available
+
+if [[ -d ~/.todo.txt ]]
+then
+    export PATH=$PATH:"~/.todo.txt"
+    export TODOTXT_DEFAULT_ACTION=ls
+    alias t='todo.sh -d ~/.todo.txt/todo.cfg'
+fi
+
+
 # *** END OF CUSTOMIZATION ***
 
 
