@@ -1,8 +1,9 @@
 # I3 CONFIG FOR JONAS STEHLI
 
-# *** autostart script ***
+# *** autostart ***
 
-exec --no-startup-id ~/.autostart.sh
+exec --no-startup-id dropbox start
+exec --no-startup-id syncthing -no-browser
 
 # ***
 # below is stuff that was added by the default config
