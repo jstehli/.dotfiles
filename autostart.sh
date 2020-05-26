@@ -4,4 +4,4 @@
 # last edited: 2020-05-25
 
 syncthing -no-browser
-~/.dropbox-dist/dropboxd
+dropbox start
