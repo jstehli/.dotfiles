@@ -1,7 +1,14 @@
-" .vimrc for Jonas Stehli
+" __   _(_)_ __ ___  _ __ ___ 
+" \ \ / / | '_ ` _ \| '__/ __|
+"  \ V /| | | | | | | | | (__ 
+"   \_/ |_|_| |_| |_|_|  \___|
+
+
+" vimrc for Jonas Stehli
+"
 "
 " Maintainer:	Jonas Stehli <jonas.stehli@jsounds.ch>
-" Last change:	2020 Apr 16
+" Last change:	2020-06-01
 
 " make sure current features are enabled
 set nocompatible
@@ -29,8 +36,11 @@ set expandtab  " use spaces instead of tab
 set smartindent
 set shiftwidth=4
 
+" scrolling
+set scrolloff=10 " Keep lines below & above cursor.
+
 " ui config
-set number  " show line numbers
+set number relativenumber " show hybrid line numbers
 set showcmd  " shows last entered command at the bottom right of vim
 set cursorline  " highlight current line
 " filetype indent on  " load filetype-specific indent files
@@ -43,10 +53,3 @@ set laststatus=2  " always show filename
 
 " latex behaviour (proposed in vimtex manual)
 let g:tex_flavor = 'latex'
-
-" Get off my lawn - helpful when learning Vim :)
-nnoremap <Left> :echoe "Use h"<CR>
-nnoremap <Right> :echoe "Use l"<CR>
-nnoremap <Up> :echoe "Use k"<CR>
-nnoremap <Down> :echoe "Use j"<CR>
-

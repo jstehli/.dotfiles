@@ -4,6 +4,27 @@
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
 
+# *** VISUAL APPEARANCE ***
+
+# borders
+default_border pixel 8
+
+# colors
+# class                 border  backgr. text    indicator child_border
+client.focused          #aa0000 #285577 #ffffff #880000   #aa0000
+client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
+client.unfocused        #333333 #222222 #888888 #292d2e   #222222
+client.urgent           #2f343a #900000 #ffffff #900000   #900000
+client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+
+client.background       #ffffff
+
+
+# *** FOCUS FOLLOWS MOUSE ***
+
+# disable
+focus_follows_mouse no
+
 # *** MOD KEY DEFINITION ***
 
 # Set the modifier to the Windows key.
@@ -149,8 +170,17 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
-# exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+# exit i3 menu
+mode "exit: [l]ock, [s]uspend, [e]xit i3, [r]eboot, [x]shutdown" {
+  bindsym l exec ~/.dotfiles/scripts/lock.sh, mode "default"
+  bindsym s exec ~/.dotfiles/scripts/lock_suspend.sh, mode "default"
+  bindsym e exec i3-msg exit, mode "default"
+  bindsym r exec systemctl reboot, mode "default"
+  bindsym x exec systemctl shutdown, mode "default"
+  bindsym Escape mode "default"
+  bindsym Return mode "default"
+}
+bindsym $mod+Escape mode "exit: [l]ock, [s]uspend, [e]xit i3, [r]eboot, [x]shutdown"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -199,7 +229,13 @@ exec --no-startup-id dropbox start
 exec --no-startup-id syncthing -no-browser
 
 # screen setup
-exec-always --no-startup-id autorandr
+exec_always --no-startup-id autorandr
+
+# desktop bg color
+exec_always --no-startup-id "xsetroot -solid '#222222'"
+
+# enable num lock
+exec_always --no-startup-id "numlockx on"
 
 
 # *** KEYBOARD LAYOUT ***
