@@ -8,6 +8,7 @@
 
 # borders
 default_border pixel 8
+default_floating_border normal
 
 # colors
 # class                 border  backgr. text    indicator child_border
@@ -122,6 +123,9 @@ bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
+
+# floating modifier (key to press to move floating windows)
+floating_modifier $mod
 
 # focus the parent container
 bindsym $mod+a focus parent
