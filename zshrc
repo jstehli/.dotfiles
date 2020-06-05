@@ -5,6 +5,14 @@
 # /___|___/_| |_|_|  \___|
 
 
+
+# *** ALIASES ***
+
+if [ -f ~/.aliases ]; then
+    . ~/.aliases
+fi
+
+
 # *** HISTORY ***
 
 HISTFILE=~/.cache/zsh/histfile

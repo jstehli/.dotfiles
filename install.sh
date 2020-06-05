@@ -1,23 +1,31 @@
 #!/bin/bash
 # Installation script for personal dotfiles
-# by Jonas Stehli
+# Author: Jonas Stehli
 
 
 # *** git submodules ***
 
 git submodule update --init
 
-# *** bash ***
+
+# *** SHELL ***
+
+# ZSH
+
+rm -rf ~/.zshrc
+ln -sv ~/.dotfiles/zshrc ~/.zshrc
+
+# BASH
 
 # clean up
 rm -f ~/.bashrc
 rm -f ~/.bash_profile
-rm -f ~/.bash_aliases
+rm -f ~/.aliases
 
 # symlinks
 ln -sv ~/.dotfiles/bashrc ~/.bashrc
 ln -sv ~/.dotfiles/bash_profile ~/.bash_profile
-ln -sv ~/.dotfiles/bash_aliases ~/.bash_aliases
+ln -sv ~/.dotfiles/aliases ~/.aliases
 
 # re-initialize conda to account for different user home dirs
 # this affects bashrc
@@ -84,9 +92,3 @@ ln -sv ~/.dotfiles/xinitrc ~/.xinitrc
 
 rm -rf ~/.config/dunst
 ln -sv ~/.dotfiles/dunst ~/.config/dunst
-
-
-# *** zsh ***
-
-rm -rf ~/.zshrc
-ln -sv ~/.dotfiles/zshrc ~/.zshrc

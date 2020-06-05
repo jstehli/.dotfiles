@@ -228,12 +228,12 @@ bar {
 # *** AUTOSTART ***
 
 # dropbox daemon
-exec --no-startup-id dropbox start
+# exec --no-startup-id dropbox start
 # syncthing daemon (used, e.g., for password store)
 exec --no-startup-id syncthing -no-browser
 
 # screen setup
-exec_always --no-startup-id autorandr
+exec_always --no-startup-id autorandr -c
 
 # desktop bg color
 exec_always --no-startup-id "xsetroot -solid '#222222'"
@@ -243,14 +243,19 @@ exec --no-startup-id cbatticon  # battery tray icon
 exec --no-startup-id networkmanager  # network tray icon
 exec --no-startup-id pasystray  # volume tray icon
 exec --no-startup-id dunst  # notifications
+exec --no-startup-id "udiskie -qAnsF"  # mount external media etc
 
 
-# *** KEYBOARD LAYOUT ***
+# *** MAKE PRIMARY MONITOR PRIMARY ***
 
-# toggle us-en, ch-de
-# The following doesn't work in i3config in Ubuntu for some weird reason.
-exec-always --no-startup-id "setxkbmap -layout us,ch -option 'grp:alt_shift_toggle'"
-# Therefore, we introduce fixed bindings as follows.
-# This will use the key right of 'p' to toggle for the us/swiss case
-bindsym $mod+udiaeresis exec "setxkbmap -layout us"
-bindsym $mod+bracketleft exec "setxkbmap -layout ch"
+# define primary monitor for ws 1-8
+workspace 1 output primary
+workspace 2 output primary
+workspace 3 output primary
+workspace 4 output primary
+workspace 5 output primary
+workspace 6 output primary
+workspace 7 output primary
+workspace 8 output primary
+workspace 9 output eDP1
+workspace 10 output eDP1

@@ -57,6 +57,13 @@ xrandr
 
 numlockx on
 
+
+# *** KEYBOARD LAYOUT ***
+
+# toggle us-en, ch-de
+setxkbmap -option grp:alt_shift_toggle us,ch
+
+
 # *** START I3 WINDOW MANAGER ***
 
 exec i3
