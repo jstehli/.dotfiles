@@ -61,3 +61,32 @@ rm -rf ~/.config/i3blocks
 ln -sv ~/.dotfiles/i3 ~/.config/i3
 ln -sv ~/.dotfiles/i3blocks ~/.config/i3blocks
 
+
+# *** Xresources (terminal customization) ***
+
+# cleanup
+rm -rf ~/.Xresources
+
+# symlink
+ln -sv ~/.dotfiles/Xresources ~/.Xresources
+
+
+# *** xinitrc ***
+
+# cleanup
+rm -rf ~/.xinitrc
+
+# symlink
+ln -sv ~/.dotfiles/xinitrc ~/.xinitrc
+
+
+# *** dunst (notifications) ***
+
+rm -rf ~/.config/dunst
+ln -sv ~/.dotfiles/dunst ~/.config/dunst
+
+
+# *** zsh ***
+
+rm -rf ~/.zshrc
+ln -sv ~/.dotfiles/zshrc ~/.zshrc

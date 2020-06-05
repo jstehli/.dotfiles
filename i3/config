@@ -238,8 +238,11 @@ exec_always --no-startup-id autorandr
 # desktop bg color
 exec_always --no-startup-id "xsetroot -solid '#222222'"
 
-# enable num lock
-exec_always --no-startup-id "numlockx on"
+# battery, volume & network trays
+exec --no-startup-id cbatticon  # battery tray icon
+exec --no-startup-id networkmanager  # network tray icon
+exec --no-startup-id pasystray  # volume tray icon
+exec --no-startup-id dunst  # notifications
 
 
 # *** KEYBOARD LAYOUT ***

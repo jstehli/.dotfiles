@@ -13,3 +13,6 @@
 [submodule "vim/pack/my-plugins/start/surround"]
 	path = vim/pack/my-plugins/start/surround
 	url = https://github.com/tpope/vim-surround.git
+[submodule "i3blocks/i3blocks-contrib"]
+	path = i3blocks/i3blocks-contrib
+	url = https://github.com/vivien/i3blocks-contrib.git

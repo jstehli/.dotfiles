@@ -11,3 +11,7 @@ set keymap vi
 "\e[B": history-search-forward
 "\e[C": forward-char
 "\e[D": backward-char
+
+# disable annoying beeps
+
+set bell-style none
