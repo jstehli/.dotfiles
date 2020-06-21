@@ -1,0 +1,7 @@
+#!/usr/bin/bash
+
+layout=$(xkblayout-state print "%e")
+
+echo ${layout^^}
+
+exit 0
