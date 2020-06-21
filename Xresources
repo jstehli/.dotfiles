@@ -20,7 +20,7 @@
 
 ! Font
 
-URxvt.font:xft:monospace:size=11
+URxvt.font: xft:Source Code Pro:size=11:antialias=true:hinting=true, xft:monospace:size=11
 
 ! Font Spacing
 

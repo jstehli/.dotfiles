@@ -20,3 +20,11 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+
+# generate passwords and copy to clipboard
+alias pwgenx='pwgen -sy 24 1 | xclip -i -selection clipboard'
+
+
+# todo.txt
+alias t='todo.sh'
+

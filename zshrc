@@ -20,9 +20,18 @@ HISTSIZE=5000
 SAVEHIST=10000
 
 
-# *** VIM BINDINGS ***
+# *** KEYBINDINGS ***
 
+# vim mode
 bindkey -v
+
+# make home/end/delete etc work
+bindkey "^[[2~" quoted-insert
+bindkey "^[[3~" delete-char
+bindkey "^[[5~" beginning-of-history
+bindkey "^[[6~" end-of-history
+bindkey "^[[7~" beginning-of-line
+bindkey "^[[8~" end-of-line
 
 
 # *** COMMAND COMPLETION ***
@@ -44,9 +53,17 @@ autoload -Uz promptinit
 promptinit
 
 
+# *** DON'T OVERWRITE EXISTING FILES WHEN OUTPUTTING TO FILE ***
+
+set -C
+
+
+
 # *** ENABLE COLORS ***
 
 autoload -U colors && colors
+
+
 
 
 #  other stuff / todo.. :)
