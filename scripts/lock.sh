@@ -1,6 +1,8 @@
 #!/bin/bash
 # inspired by https://faq.i3wm.org/question/83/how-to-run-i3lock-after-computer-inactivity.1.html
 
+rm /tmp/screen_locked.png
+
 # Take a screenshot
 scrot /tmp/screen_locked.png
 
