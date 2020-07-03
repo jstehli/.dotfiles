@@ -6,7 +6,8 @@
 *cursorColor: #aeee00
 *scrollColor: #45413b
 *fadeColor: #ffffff
-*fading: 20
+! fading changed from 20
+*fading: 3
 
 ! black
 *color0: #141413

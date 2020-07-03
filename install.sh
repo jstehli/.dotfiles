@@ -92,3 +92,7 @@ ln -sv ~/.dotfiles/xinitrc ~/.xinitrc
 
 rm -rf ~/.config/dunst
 ln -sv ~/.dotfiles/dunst ~/.config/dunst
+
+
+rm -rf ~/.tmux.conf
+ln -sv ~/.dotfiles/tmux.conf ~/.tmux.conf
