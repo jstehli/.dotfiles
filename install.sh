@@ -103,3 +103,11 @@ ln -sv ~/.dotfiles/tmux.conf ~/.tmux.conf
 # cleanup
 rm -rf ~/.config/user-dirs.dirs
 ln -sv ~/.dotfiles/user-dirs.dirs ~/.config/user-dirs.dirs
+
+
+# *** mutt ***
+
+rm -rf ~/.config/mutt
+rm -rf ~/.mutt
+rm -rf ~/.muttrc
+ln -sv ~/.dotfiles/mutt ~/.config/mutt
