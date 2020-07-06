@@ -245,7 +245,8 @@ exec --no-startup-id cbatticon  # battery tray icon
 exec --no-startup-id nm-applet  # network tray icon
 exec --no-startup-id pasystray  # volume tray icon
 exec --no-startup-id dunst  # notifications
-exec --no-startup-id "udiskie -qAnsF"  # mount external media etc
+exec --no-startup-id "udiskie -qAnsFc ~/.config/udiskie/config.yml"  # mount external media etc
+exec --no-startup-id "udiskie-mount /dev/disk/by-label/js-backup"
 
 
 # *** MAKE PRIMARY MONITOR PRIMARY ***
