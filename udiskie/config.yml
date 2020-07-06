@@ -1,0 +1,3 @@
+device_config:
+- id_uuid: 7b9b3032-0a48-44a9-bc31-b221b1080054
+  automount: true

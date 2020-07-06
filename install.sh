@@ -111,3 +111,9 @@ rm -rf ~/.config/mutt
 rm -rf ~/.mutt
 rm -rf ~/.muttrc
 ln -sv ~/.dotfiles/mutt ~/.config/mutt
+
+
+# *** udiskie ***
+
+rm -rf ~/.config/udiskie
+ln -sv ~/.dotfiles/udiskie ~/.config/udiskie
