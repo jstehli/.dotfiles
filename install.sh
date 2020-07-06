@@ -96,3 +96,10 @@ ln -sv ~/.dotfiles/dunst ~/.config/dunst
 
 rm -rf ~/.tmux.conf
 ln -sv ~/.dotfiles/tmux.conf ~/.tmux.conf
+
+
+# *** user dirs ***
+
+# cleanup
+rm -rf ~/.config/user-dirs.dirs
+ln -sv ~/.dotfiles/user-dirs.dirs ~/.config/user-dirs.dirs
