@@ -34,12 +34,14 @@ then
     echo "re-initializing miniconda"
     source ~/miniconda3/bin/activate
     conda init
+    conda init zsh
 fi
 if [[ -d ~/anaconda3 ]]
 then
     echo "re-initializing anaconda"
     source ~/anaconda3/bin/activate
     conda init
+    conda init zsh
 fi
 
 
