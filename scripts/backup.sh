@@ -4,6 +4,7 @@
 # this checks if the backup location is available, i.e., you can 
 # use this with an external disk.
 # put this in /etc/cron.hourly
+# make shure to remove the ".sh" in the filename or it won't be executed
 # author: Jonas Stehli
 
 
