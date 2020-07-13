@@ -101,8 +101,6 @@ ln -sv ~/.dotfiles/dunst ~/.config/dunst
 rm -rf ~/.tmux.conf
 ln -sv ~/.dotfiles/tmux.conf ~/.tmux.conf
 
-tmux source-file ~/.config/tmux/tmux.conf
-
 
 # *** user dirs ***
 
