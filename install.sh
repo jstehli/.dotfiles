@@ -99,8 +99,7 @@ ln -sv ~/.dotfiles/dunst ~/.config/dunst
 # *** tmux ***
 
 rm -rf ~/.tmux.conf
-rm -rf ~/.config/tmux/
-ln -sv ~/.dotfiles/tmux ~/.config/tmux
+ln -sv ~/.dotfiles/tmux.conf ~/.tmux.conf
 
 tmux source-file ~/.config/tmux/tmux.conf
 
