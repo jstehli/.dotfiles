@@ -15,6 +15,11 @@ git submodule update --init
 rm -rf ~/.zshrc
 ln -sv ~/.dotfiles/zshrc ~/.zshrc
 
+# mkdir for zsh histfile
+[ -d ~/.cache/zsh ] || mkdir -p ~/.cache/zsh
+
+
+
 # BASH
 
 # clean up
@@ -121,3 +126,8 @@ ln -sv ~/.dotfiles/mutt ~/.config/mutt
 
 rm -rf ~/.config/udiskie
 ln -sv ~/.dotfiles/udiskie ~/.config/udiskie
+
+
+# *** todo.txt ***
+rm -rf ~/.config/todotxt
+ln -sv ~/.dotfiles/todotxt ~/.config/todotxt

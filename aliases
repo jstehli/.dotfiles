@@ -2,7 +2,7 @@
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
-alias .....='cd../../../..'
+alias .....='cd ../../../..'
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
@@ -26,5 +26,5 @@ alias pwgenx='pwgen -sy 24 1 | xclip -i -selection clipboard'
 
 
 # todo.txt
-alias t='todo.sh'
+alias t='todo.sh -d ~/.config/todotxt/todo.cfg'
 
