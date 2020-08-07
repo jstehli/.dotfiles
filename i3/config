@@ -216,7 +216,9 @@ bindsym $mod+r mode "resize"
 # lock screen
 bindsym $mod+shift+x exec ~/.dotfiles/scripts/lock.sh
 
-
+# screenshot
+bindsym $mod+p exec ~/.dotfiles/scripts/screenshot_full.sh
+bindsym --release $mod+shift+p exec ~/.dotfiles/scripts/screenshot_select.sh
 
 # *** STATUS BAR ***
 
@@ -229,8 +231,8 @@ bindsym --release Caps_Lock exec pkill -SIGRTMIN+11 i3blocks
 
 # *** AUTOSTART ***
 
-# dropbox daemon
-exec --no-startup-id dropbox start
+# nextcloud client
+exec --no-startup-id nextcloud
 # syncthing daemon (used, e.g., for password store)
 exec --no-startup-id syncthing -no-browser
 
